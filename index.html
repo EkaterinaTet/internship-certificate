@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>terem</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Oswald:400,500&display=swap&subset=cyrillic"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://kit.fontawesome.com/63d634c668.js" crossorigin="anonymous"></script>
+  </head>
+  <body> 
+    <div class="title">
+      <h1 class="oswald">Регистрация сертификата «Дом в подарок»</h1>
+    </div> 
+    
+    <div class="container">
+      <img src="./img/header_img.jpg" alt="изображение" /> 
+      
+      <div class="block-registration">
+        <div class="block-registration__content">
+           <h2 class="oswald">Регистрация сертификата</h2>
+            <p class="block-registration__text">Для регистрации сертификата –  введите код сертификата и ваши контактные данные.</p>
+            <form class="registration-form">
+             <input type="text" placeholder="Код сертификата" required>
+             <input type="text" placeholder="Ваше имя" required>
+             <input type="tel"  placeholder="Ваш телефон" required>
+             <input type="email" placeholder="Ваш е-мейл" required>
+             <button type="submit" class="registration-form__btn btn oswald">Отправить заявку на участие в акции</button>
+            </form>
+           <p class="privacy-policy">
+            Отправляя форму Вы соглашаетесь с
+            <a href="#">Политикой обработки данных</a>
+           </p>
+       </div>
+      </div>    
+
+      <div class="accordion">
+        <details>
+          <summary class="accordion-title">Что дает сертификат?<i class="arrow fa-solid fa-angle-down fa-lg" style="line-height: 1; font-size: 15px;"></i></summary>
+          <div class="accordion-content">
+            <p>Сертификат даёт право участвовать в акции «Дом в подарок».</p>
+            <p>Номер сертификата является вашим уникальным номером участника.</p>
+            <p>Не забудьте его зарегистрировать на нашем сайте и взять с собой на розыгрыш главного приза 16 декабря 2018 года.</p>
+            <p>Владелец сертификата может принимать участие в розыгрыше только при наличии акта приёмки-передачи строения, подтверждающего окончание строительства.</p>
+          </div>
+        </details>
+        <details>
+          <summary class="accordion-title">Где получить сертификат?<i class="arrow fa-solid fa-angle-down fa-lg" style="line-height: 1; font-size: 15px;"></i></summary>
+          <div class="accordion-content">
+            <p>Сертификат выдаётся всем клиента строительной компании «Теремъ» во время подписания договора на строительство дома или бани на территории выставочного комплекса компании по адресу: г. Москва, ул. Зеленодольская, вл. 42.</p>
+            <p>Сертификаты выдаются в период с 6 по 19 сентября 2018 года включительно.</p>
+          </div>
+        </details>
+      </div>
+
+      <div class="consultation">
+        <div class="consultation__content">
+        <h2 class="consultation__title oswald">Если остались вопросы по участию в акции</h2>
+        <p class="consultation__text">Оставьте телефонный номер и наши специалисты свяжутся с Вами через 30 секунд.</p>
+        
+        <form class="consultation-form">
+          <div class="consultation-form__fields">
+            <input type="text" placeholder="Ваше имя" required>
+            <input type="tel"  placeholder="+7  ( ₋ ₋ ₋ )  ₋ ₋ ₋    ₋ ₋    ₋ ₋"  required>
+            <button type="submit" class="consultation-form__btn btn oswald">Заявка на консультацию</button>
+          </div>
+          <div class="checkbox-container">
+            <input type="checkbox" id="policyCheckbox" class="consultation__checkbox" required>
+            <label for="policyCheckbox">Я принимаю условия Политики обработки данных</label>
+          </div>
+        </form>
+     </div>
+   </div>
+  </body>
+</html>
